@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Value Calculator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Player Value Predictor</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="calculator-form">
+                <h2>Player Valuation</h2>
+                <div class="form-container">
+                    <!-- 数字输入字段 -->
+                    <div class="form-group">
+                        <label for="overall">Overall Rating (40-99):</label>
+                        <input type="number" id="overall" min="40" max="99" placeholder="40-99">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="potential">Potential Rating (40-99):</label>
+                        <input type="number" id="potential" min="40" max="99" placeholder="40-99">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age (16-54):</label>
+                        <input type="number" id="age" min="16" max="54" placeholder="16-54">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weak_foot">Weak Foot (1-5):</label>
+                        <input type="number" id="weak_foot" min="1" max="5" placeholder="1-5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skill_moves">Skill Moves (1-5):</label>
+                        <input type="number" id="skill_moves" min="1" max="5" placeholder="1-5">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="international_reputation">Int'l Reputation (1-5):</label>
+                        <input type="number" id="international_reputation" min="1" max="5" placeholder="1-5">
+                    </div>
+
+                    <!-- 下拉选择字段 -->
+                    <div class="form-group">
+                        <label for="club_position">Position:</label>
+                        <select id="club_position">
+                            <option value="ST">ST (Striker)</option>
+                            <option value="GK">GK (Goalkeeper)</option>
+                            <option value="CB">CB (Center Back)</option>
+                            <option value="CM">CM (Center Mid)</option>
+                            <option value="CAM">CAM (Attacking Mid)</option>
+                            <option value="CDM">CDM (Defensive Mid)</option>
+                            <option value="LW">LW (Left Wing)</option>
+                            <option value="RW">RW (Right Wing)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="work_rate">Work Rate:</label>
+                        <select id="work_rate">
+                            <option value="High/Medium">High/Medium</option>
+                            <option value="Medium/Medium">Medium/Medium</option>
+                            <option value="Medium/High">Medium/High</option>
+                            <option value="High/High">High/High</option>
+                            <option value="Low/Medium">Low/Medium</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="body_type">Body Type:</label>
+                        <select id="body_type">
+                            <option value="Normal (185+)">Normal (185cm+)</option>
+                            <option value="Normal (170-185)">Normal (170-185cm)</option>
+                            <option value="Lean (185+)">Lean (185cm+)</option>
+                            <option value="Stocky (170-185)">Stocky (170-185cm)</option>
+                        </select>
+                    </div>
+
+                    <button class="calculate-btn" onclick="calculateValue()">CALCULATE</button>
+                </div>
+
+                <!-- 结果展示区域 -->
+                <div class="results">
+                    <div class="result-item">
+                        <span>Market Value:</span>
+                        <span id="market-value">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span>Weekly Salary:</span>
+                        <span id="weekly-salary">-</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+/* General Layout and Colors - FIFA主题 */
+body {
+    font-family: 'Rajdhani', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0e21;
+    color: #f5f5f5;
+    line-height: 1.6;
+    background-image: url('https://i.imgur.com/YtSB5mC.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    background-color: rgba(12, 29, 62, 0.9);
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid #01b1af;
+}
+
+header .logo h1 {
+    font-size: 2.4rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(1, 177, 175, 0.7);
+}
+
+header .logo h1::before {
+    content: "⚽";
+    margin-right: 10px;
+}
+
+/* 新增导航菜单 */
+.main-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(1, 177, 175, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-item {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #01b1af;
+    border-bottom: 2px solid #01b1af;
+}
+
+main {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.calculator-form {
+    background-color: rgba(17, 24, 39, 0.95);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto 60px;
+    border-top: 4px solid #01b1af;
+    position: relative;
+}
+
+.calculator-form::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(1, 177, 175, 0.3);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.calculator-form h2 {
+    color: #fff;
+    font-size: 1.9rem;
+    margin-bottom: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    display: inline-block;
+}
+
+.calculator-form h2::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #01b1af, transparent);
+    margin: 10px auto 0;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.form-group {
+    width: calc(50% - 15px);
+    position: relative;
+}
+
+label {
+    display: block;
+    color: #01b1af;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #2a3a5a;
+    background-color: rgba(19, 36, 66, 0.7);
+    color: white;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: #01b1af;
+    box-shadow: 0 0 0 2px rgba(1, 177, 175, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #01b1af, #0a6c8d);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(1, 177, 175, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #01c5c3, #0b7da3);
+    transform: translateY(-2px);
+}
+
+button::after {
+    content: "⚽";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.results {
+    margin-top: 50px;
+    background-color: rgba(17, 24, 39, 0.9);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #01b1af;
+}
+
+/* 新增球队展示区域 */
+.teams-section {
+    margin: 50px auto;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #01b1af, transparent);
+    margin: 15px auto 0;
+}
+
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.team-card {
+    background-color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.team-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 40%, rgba(1, 177, 175, 0.1), transparent 60%);
+    background-size: 200% 200%;
+    animation: shimmer 2s infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.team-logo-container {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpattern id='gold-pattern' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Cpath d='M0 10 L20 10 M10 0 L10 20' stroke='%23D4AF37' stroke-width='0.5' opacity='0.3'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='%23000'/%3E%3Crect width='100%25' height='100%25' fill='url(%23gold-pattern)'/%3E%3C/svg%3E");
+    padding: 30px;
+}
+
+.team-logo-container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,0 L100,0 L50,100 L0,0' fill='%23D4AF37' opacity='0.05'/%3E%3Cpath d='M100,0 L100,100 L50,100 L100,0' fill='%23D4AF37' opacity='0.05'/%3E%3Cpath d='M0,100 L0,0 L50,100 L0,100' fill='%23D4AF37' opacity='0.05'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    z-index: 0;
+}
+
+.team-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+}
+
+.team-info {
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(20, 30, 48, 0.9), rgba(10, 15, 25, 0.9));
+    border-top: 2px solid rgba(1, 177, 175, 0.5);
+}
+
+.team-name {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.team-desc {
+    color: #bbb;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: rgba(12, 29, 62, 0.9);
+    text-align: center;
+    padding: 25px 0;
+    color: #aaa;
+    font-size: 0.9rem;
+    border-top: 2px solid #01b1af;
+}

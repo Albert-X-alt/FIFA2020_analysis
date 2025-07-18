@@ -1,7 +1,14 @@
 # FIFA 2022 players wages prediction model
 
 > It is a deep learning base FIFA 2022 players wages prediction model  
-> completed by **Xiaobo Huang, Jiaming Lei, Qikai Zeng 2413917309@qq.com, Yixuan Zou, Junjie Huang, Mingguang Zhu**
+---
+ Built by
+- Xiaobo Huang  shengjibanzi@qq.com,
+- Jiaming Lei 
+- Qikai Zeng  2413917309@qq.com,
+- Yixuan Zou
+- Junjie Huang
+- Mingguang Zhu
 
 ---
 
